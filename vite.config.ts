@@ -69,8 +69,8 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Vitest',
+        short_name: 'Vitest',
         theme_color: '#ffffff',
         icons: [
           {
