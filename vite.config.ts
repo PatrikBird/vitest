@@ -1,15 +1,15 @@
-import path from 'path'
-import { defineConfig } from 'vite'
-import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
-import Layouts from 'vite-plugin-vue-layouts'
-import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
-import ViteComponents from 'vite-plugin-components'
-import Markdown from 'vite-plugin-md'
-import WindiCSS from 'vite-plugin-windicss'
-import { VitePWA } from 'vite-plugin-pwa'
-import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import Prism from 'markdown-it-prism'
+import path from 'path';
+import { defineConfig } from 'vite';
+import Vue from '@vitejs/plugin-vue';
+import Pages from 'vite-plugin-pages';
+import Layouts from 'vite-plugin-vue-layouts';
+import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons';
+import ViteComponents from 'vite-plugin-components';
+import Markdown from 'vite-plugin-md';
+import WindiCSS from 'vite-plugin-windicss';
+import { VitePWA } from 'vite-plugin-pwa';
+import VueI18n from '@intlify/vite-plugin-vue-i18n';
+import Prism from 'markdown-it-prism';
 
 export default defineConfig({
   resolve: {
@@ -36,7 +36,7 @@ export default defineConfig({
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
-        md.use(Prism)
+        md.use(Prism);
       },
     }),
 
@@ -46,7 +46,7 @@ export default defineConfig({
       extensions: ['vue', 'md'],
 
       // allow auto import and register components used in markdown
-      customLoaderMatcher: id => id.endsWith('.md'),
+      customLoaderMatcher: (id) => id.endsWith('.md'),
 
       // auto import icons
       customComponentResolvers: [
@@ -105,13 +105,7 @@ export default defineConfig({
   },
 
   optimizeDeps: {
-    include: [
-      'vue',
-      'vue-router',
-      '@vueuse/core',
-    ],
-    exclude: [
-      'vue-demi',
-    ],
+    include: ['vue', 'vue-router', '@vueuse/core'],
+    exclude: ['vue-demi'],
   },
-})
+});
