@@ -14,9 +14,6 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <!-- <nav class="text-center pb-8 text-gray-700 dark:text-gray-200">
-    <the-header />
-  </nav> -->
   <div>
     <p class="text-4xl">
       <carbon-campsite class="inline-block" />
@@ -24,7 +21,7 @@ const { t } = useI18n();
     <p>
       <a
         rel="noreferrer"
-        href="https://github.com/antfu/vitesse"
+        href="https://github.com/"
         target="_blank"
       >
         Vitesse

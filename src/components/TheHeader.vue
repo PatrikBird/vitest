@@ -12,7 +12,7 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <nav class="text-xl mt-6">
+  <nav class="text-xl mt-6 text-center pb-8 text-gray-700 dark:text-gray-200">
     <router-link class="icon-btn mx-2" to="/" :title="t('button.home')">
       <carbon-campsite />
     </router-link>
@@ -41,7 +41,7 @@ const toggleLocales = () => {
     <a
       class="icon-btn mx-2"
       rel="noreferrer"
-      href="https://github.com/antfu/vitesse"
+      href="https://github.com/"
       target="_blank"
       title="GitHub"
     >

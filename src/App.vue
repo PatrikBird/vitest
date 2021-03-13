@@ -11,8 +11,6 @@ useHead({
 </script>
 
 <template>
-  <nav class="text-center pb-8 text-gray-700 dark:text-gray-200">
-    <the-header />
-  </nav>
+  <the-header />
   <router-view />
 </template>
