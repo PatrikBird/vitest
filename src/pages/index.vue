@@ -21,10 +21,10 @@ const { t } = useI18n();
     <p>
       <a
         rel="noreferrer"
-        href="https://github.com/"
+        href="#"
         target="_blank"
       >
-        Vitesse
+        Home
       </a>
     </p>
     <p>

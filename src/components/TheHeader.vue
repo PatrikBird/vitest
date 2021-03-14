@@ -38,14 +38,18 @@ const toggleLocales = () => {
       <carbon-dicom-overlay />
     </router-link>
 
+    <router-link class="icon-btn mx-2" to="/blog" :title="t('button.blog')">
+      <carbon-pen-fountain />
+    </router-link>
+
     <a
       class="icon-btn mx-2"
       rel="noreferrer"
-      href="https://github.com/"
+      href="https://twitter.com/"
       target="_blank"
-      title="GitHub"
+      title="Twitter"
     >
-      <carbon-logo-github />
+      <carbon-logo-twitter />
     </a>
   </nav>
 </template>

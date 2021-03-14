@@ -1,5 +1,6 @@
 {
   "button": {
+    "blog": "소개",
     "about": "소개",
     "back": "뒤로가기",
     "go": "이동",
@@ -8,7 +9,7 @@
     "toggle_langs": "언어 변경"
   },
   "intro": {
-    "desc": "Vite 애플리케이션 템플릿",
+    "desc": "애플리케이션 템플릿",
     "dynamic-route": "다이나믹 라우트 데모",
     "hi": "안녕, {name}!",
     "whats-your-name": "이름이 뭐예요?"
