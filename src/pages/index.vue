@@ -19,13 +19,7 @@ const { t } = useI18n();
       <carbon-campsite class="inline-block" />
     </p>
     <p>
-      <a
-        rel="noreferrer"
-        href="#"
-        target="_blank"
-      >
-        Home
-      </a>
+      <a rel="noreferrer" href="#" target="_blank"> Home </a>
     </p>
     <p>
       <em class="text-sm opacity-75">{{ t('intro.desc') }}</em>
