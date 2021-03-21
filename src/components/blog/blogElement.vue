@@ -40,7 +40,7 @@ const props = defineProps({
             {{ props.title }}
           </h2>
           <span class="inline-block text-xs text-white font-sans"> {{ props.subTitle }}</span>
-          <span class="inline-block text-xs text-white font-sans">{{ props.date }}</span>
+          <span class="block text-xs text-white font-sans">{{ props.date }}</span>
         </div>
       </div>
     </a>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 // import { useI18n } from 'vue-i18n';
-import { BlogPost } from '../types';
+// import { BlogPost } from '../types'; // TODO: import broken - why?
 
-const posts: BlogPost = {
+const posts = {
   // get data from vuex
   slug: 'my-post',
   tag: 'vegan',
