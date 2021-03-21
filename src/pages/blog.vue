@@ -12,8 +12,6 @@ const posts: BlogPost = {
   date: '2021-03-21',
 };
 
-console.log(posts);
-
 const array = [posts, posts, posts];
 
 // const { t } = useI18n();
