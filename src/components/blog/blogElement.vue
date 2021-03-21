@@ -1,7 +1,7 @@
 <script setup="props" lang="ts">
 import { defineProps } from "vue";
 
-const props = defineProps({
+const props = defineProps({ // get data from vuex
   tag: {
     type: String,
     required: true,
@@ -10,11 +10,15 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  headline: {
+  title: {
     type: String,
     required: true,
   },
-  subline: {
+  subTitle: {
+    type: String,
+    required: true,
+  },
+  date: {
     type: String,
     required: true,
   },
@@ -36,10 +40,13 @@ const props = defineProps({
             >{{ props.tag }}</span
           >
           <h2 class="text-white font-semibold font-serif text-xl my-5">
-            {{ props.headline }}
+            {{ props.title }}
           </h2>
           <span class="inline-block text-xs text-white font-sans">{{
-            props.subline
+            props.subTitle
+          }}</span>
+          <span class="inline-block text-xs text-white font-sans">{{
+            props.date
           }}</span>
         </div>
       </div>
