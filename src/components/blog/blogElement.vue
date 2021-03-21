@@ -2,7 +2,6 @@
 import { defineProps } from 'vue';
 
 const props = defineProps({
-  // get data from vuex
   tag: {
     type: String,
     required: true,

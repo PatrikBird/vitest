@@ -6,7 +6,6 @@ dependencies:
   vue: 3.0.7
   vue-i18n: 9.0.0_vue@3.0.7
   vue-router: 4.0.4_vue@3.0.7
-  vuex: 4.0.0_vue@3.0.7
 devDependencies:
   '@antfu/eslint-config': 0.4.3_eslint@7.21.0+typescript@4.2.2
   '@iconify/json': 1.1.311
@@ -5395,14 +5394,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8h4TikD+JabbMK9aRlBO4laG0AtNHRPHynxYgWZ9sq1YUPfzynd9Jeeb27XNyZytC7aCQRX9xe1+TQJuc181Tw==
-  /vuex/4.0.0_vue@3.0.7:
-    dependencies:
-      vue: 3.0.7
-    dev: false
-    peerDependencies:
-      vue: ^3.0.2
-    resolution:
-      integrity: sha512-56VPujlHscP5q/e7Jlpqc40sja4vOhC4uJD1llBCWolVI8ND4+VzisDVkUMl+z5y0MpIImW6HjhNc+ZvuizgOw==
   /w3c-hr-time/1.0.2:
     dependencies:
       browser-process-hrtime: 1.0.0
@@ -5787,4 +5778,3 @@ specifiers:
   vue: ^3.0.7
   vue-i18n: ^9.0.0
   vue-router: ^4.0.4
-  vuex: ^4.0.0
