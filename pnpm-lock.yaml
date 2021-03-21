@@ -1176,7 +1176,7 @@ packages:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
       '@nodelib/fs.walk': 1.2.6
-      glob-parent: 5.1.1
+      glob-parent: 5.1.2
       merge2: 1.4.1
       micromatch: 4.0.2
       picomatch: 2.2.2
@@ -1674,7 +1674,7 @@ packages:
   /@vueuse/core/4.3.1_vue@3.0.7:
     dependencies:
       '@vueuse/shared': 4.3.1_vue@3.0.7
-      vue-demi: 0.7.1_vue@3.0.7
+      vue-demi: 0.7.3_vue@3.0.7
     dev: false
     peerDependencies:
       vue: '*'
@@ -1690,7 +1690,7 @@ packages:
       integrity: sha512-SaKib18YjFLrErxHYDxLXsBBY4/Q93b6rYer8WRMaRSBqotmZYGEBaoRURhtVYfneBf5dX9O9P3EdjkSn+gL0g==
   /@vueuse/shared/4.3.1_vue@3.0.7:
     dependencies:
-      vue-demi: 0.7.1_vue@3.0.7
+      vue-demi: 0.7.3_vue@3.0.7
     dev: false
     peerDependencies:
       vue: '*'
@@ -3071,6 +3071,14 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-FnI+VGOpnlGHWZxthPGR+QhR78fuiK0sNLkHQv+bL9fQi57lNNdquIbna/WrfROrolq8GK5Ek6BiMwqL/voRYQ==
+  /glob-parent/5.1.2:
+    dependencies:
+      is-glob: 4.0.1
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   /glob-to-regexp/0.4.1:
     dev: true
     resolution:
@@ -5308,7 +5316,7 @@ packages:
       fsevents: 2.3.2
     resolution:
       integrity: sha512-+PP89D7AKXFE4gps8c5+4eP5yXTh5qCogjdYX7iSsIxbLZAa26JoGSq6OLk0qdb/fqDh7gtJqGiLbG2V6NvkKQ==
-  /vue-demi/0.7.1_vue@3.0.7:
+  /vue-demi/0.7.3_vue@3.0.7:
     dependencies:
       vue: 3.0.7
     dev: false
@@ -5321,7 +5329,7 @@ packages:
         optional: true
     requiresBuild: true
     resolution:
-      integrity: sha512-cJ3QnpcbIqdpeV3NnNgSDwneCJifvHct+6JNvfYn/49geK/uv5VJicZDvyg20guNhz+DZmUHBHyRQTJ32lSC2g==
+      integrity: sha512-vrzM26H4CZCXBf/eu4T8nks6o7qgziYM52myk8bg+atw4qYqpeWJf5c82W8VdmgGfSIdh9ulOOe9+GeLc3Z/8A==
   /vue-eslint-parser/7.5.0_eslint@7.21.0:
     dependencies:
       debug: 4.3.1

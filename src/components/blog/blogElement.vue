@@ -1,8 +1,16 @@
 <script setup="props" lang="ts">
-import { defineProps } from "vue";
+import { defineProps } from 'vue';
 
 const props = defineProps({
   tag: {
+    type: String,
+    required: true,
+  },
+  title: {
+    type: String,
+    required: true,
+  },
+  subTitle: {
     type: String,
     required: true,
   },
@@ -10,11 +18,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  headline: {
-    type: String,
-    required: true,
-  },
-  subline: {
+  date: {
     type: String,
     required: true,
   },
@@ -27,20 +31,16 @@ const props = defineProps({
       <div
         class="mx-2 flex items-center justify-center bg-gray-300 bg-cover bg-center relative rounded overflow-hidden"
         :style="{ 'background-image': 'url(images/' + props.img + ')' }"
-        style="height: 400px;"
+        style="height: 400px"
       >
         <div class="absolute w-full h-full bg-black z-10 opacity-50"></div>
         <div class="relative z-20 text-center p-5">
-          <span
-            class="inline-block text-white uppercase text-xs tracking-wide"
-            >{{ props.tag }}</span
-          >
+          <span class="inline-block text-white uppercase text-xs tracking-wide">{{ props.tag }}</span>
           <h2 class="text-white font-semibold font-serif text-xl my-5">
-            {{ props.headline }}
+            {{ props.title }}
           </h2>
-          <span class="inline-block text-xs text-white font-sans">{{
-            props.subline
-          }}</span>
+          <span class="inline-block text-xs text-white font-sans"> {{ props.subTitle }}</span>
+          <span class="inline-block text-xs text-white font-sans">{{ props.date }}</span>
         </div>
       </div>
     </a>

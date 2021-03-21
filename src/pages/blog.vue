@@ -1,19 +1,20 @@
 <script setup lang="ts">
 // import { useI18n } from 'vue-i18n';
-interface BlogElement {
-  tag: string,
-  img: string,
-  headline: string,
-  subline: string
-}
-const elements: BlogElement = {
-  tag: 'Veganism',
+import { BlogPost } from '../types';
+
+const posts: BlogPost = {
+  // get data from vuex
+  slug: 'my-post',
+  tag: 'vegan',
+  title: 'some-title',
+  subTitle: 'some-sub-title',
   img: 'beach.jpg',
-  headline: 'headline',
-  subline: 'subline',
+  date: '2021-03-21',
 };
 
-const array = [elements, elements, elements];
+console.log(posts);
+
+const array = [posts, posts, posts];
 
 // const { t } = useI18n();
 </script>
@@ -28,11 +29,12 @@ const array = [elements, elements, elements];
       <ul class="flex flex-wrap -mx-2 overflow-hidden list-none">
         <blog-element
           v-for="ele in array"
-          :key="ele.headline"
-          :headline="ele.headline"
-          :img="ele.img"
-          :subline="ele.subline"
+          :key="ele.slug"
           :tag="ele.tag"
+          :title="ele.title"
+          :subTitle="ele.subTitle"
+          :img="ele.img"
+          :date="ele.date"
         ></blog-element>
       </ul>
     </div>
