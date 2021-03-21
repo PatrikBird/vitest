@@ -1,17 +1,26 @@
 <script setup lang="ts">
 // import { useI18n } from 'vue-i18n';
-import { BlogPost } from '../types';
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+// import { BlogPosts } from '../types';
 
-const posts: BlogPost = { // get data from vuex
-  slug: 'my-post',
-  tag: 'vegan',
-  title: 'some-title',
-  subTitle: 'some-sub-title',
-  img: 'beach.jpg',
-  date: '2021-03-21',
-};
+const store = useStore();
+console.log(store);
 
-const array = [posts, posts, posts];
+const blogPosts = computed(() => store.state.blog.posts);
+
+console.log(blogPosts);
+// const posts: BlogPost = {
+//   // get data from vuex
+//   slug: 'my-post',
+//   tag: 'vegan',
+//   title: 'some-title',
+//   subTitle: 'some-sub-title',
+//   img: 'beach.jpg',
+//   date: '2021-03-21',
+// };
+
+// const array = [posts, posts, posts];
 
 // const { t } = useI18n();
 </script>
@@ -25,7 +34,7 @@ const array = [posts, posts, posts];
     <div class="max-w-5xl mx-auto pt-10 pb-10">
       <ul class="flex flex-wrap -mx-2 overflow-hidden list-none">
         <blog-element
-          v-for="ele in array"
+          v-for="ele in blogPosts"
           :key="ele.slug"
           :tag="ele.tag"
           :title="ele.title"
