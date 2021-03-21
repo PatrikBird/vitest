@@ -9,6 +9,6 @@ export type BlogPost = {
   img: string;
   date: string;
 };
-export interface BlogPosts {
+export type BlogPosts = {
   posts: BlogPost[];
 }
