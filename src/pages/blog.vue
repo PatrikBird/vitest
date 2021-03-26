@@ -1,18 +1,11 @@
 <script setup lang="ts">
 // import { useI18n } from 'vue-i18n';
-// import { BlogPost } from '../types'; // TODO: import broken - why?
+import { provide } from 'vue';
+import { post } from '../global';
 
-const posts = {
-  // get data from vuex
-  slug: 'my-post',
-  tag: 'vegan',
-  title: 'some-title',
-  subTitle: 'some-sub-title',
-  img: 'beach.jpg',
-  date: '2021-03-21',
-};
+provide('post', post);
 
-const array = [posts, posts, posts];
+const array = [post, post, post];
 
 // const { t } = useI18n();
 </script>
