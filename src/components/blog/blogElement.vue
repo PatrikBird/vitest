@@ -2,9 +2,9 @@
 import { defineProps } from 'vue';
 // import { inject } from 'vue';
 
-// const post = inject('post');
+// const posts = inject('posts');
 
-// console.log(post);
+// console.log(posts);
 
 const props = defineProps({
   tag: {
