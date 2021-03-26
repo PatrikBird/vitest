@@ -1,18 +1,9 @@
 <script setup lang="ts">
 // import { useI18n } from 'vue-i18n';
-// import { BlogPost } from '../types'; // TODO: import broken - why?
+import { provide } from 'vue';
+import { posts } from '../global';
 
-const posts = {
-  // get data from vuex
-  slug: 'my-post',
-  tag: 'vegan',
-  title: 'some-title',
-  subTitle: 'some-sub-title',
-  img: 'beach.jpg',
-  date: '2021-03-21',
-};
-
-const array = [posts, posts, posts];
+provide('posts', posts);
 
 // const { t } = useI18n();
 </script>
@@ -26,7 +17,7 @@ const array = [posts, posts, posts];
     <div class="max-w-5xl mx-auto pt-10 pb-10">
       <ul class="flex flex-wrap -mx-2 overflow-hidden list-none">
         <blog-element
-          v-for="ele in array"
+          v-for="ele in posts"
           :key="ele.slug"
           :tag="ele.tag"
           :title="ele.title"

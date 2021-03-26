@@ -9,6 +9,3 @@ export type BlogPost = {
   img: string;
   date: string;
 };
-export type BlogPosts = {
-  posts: BlogPost[];
-}
