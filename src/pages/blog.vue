@@ -1,11 +1,9 @@
 <script setup lang="ts">
 // import { useI18n } from 'vue-i18n';
 import { provide } from 'vue';
-import { post } from '../global';
+import { posts } from '../global';
 
-provide('post', post);
-
-const array = [post, post, post];
+provide('posts', posts);
 
 // const { t } = useI18n();
 </script>
@@ -19,7 +17,7 @@ const array = [post, post, post];
     <div class="max-w-5xl mx-auto pt-10 pb-10">
       <ul class="flex flex-wrap -mx-2 overflow-hidden list-none">
         <blog-element
-          v-for="ele in array"
+          v-for="ele in posts"
           :key="ele.slug"
           :tag="ele.tag"
           :title="ele.title"
