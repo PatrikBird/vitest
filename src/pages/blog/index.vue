@@ -1,11 +1,14 @@
 <script setup lang="ts">
-// import { useI18n } from 'vue-i18n';
-import { provide } from 'vue';
-import { posts } from '../global';
+// import { provide } from 'vue';
+// import { useRouter } from 'vue-router';
+import { posts } from '../../global';
 
-provide('posts', posts);
+// provide('posts', posts);
 
-// const { t } = useI18n();
+// const router = useRouter();
+const navigateToBlogPost = () => {
+  // if (ele.slug) router.push('/blog/' + slug.value);
+};
 </script>
 
 <template>
@@ -24,6 +27,7 @@ provide('posts', posts);
           :subTitle="ele.subTitle"
           :img="ele.img"
           :date="ele.date"
+          @click="navigateToBlogPost"
         ></blog-element>
       </ul>
     </div>

@@ -1,10 +1,7 @@
 <script setup="props" lang="ts">
 import { defineProps } from 'vue';
 // import { inject } from 'vue';
-
 // const posts = inject('posts');
-
-// console.log(posts);
 
 const props = defineProps({
   tag: {
