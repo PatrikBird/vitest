@@ -1,9 +1,11 @@
 <script setup="props" lang="ts">
 import { defineProps } from 'vue';
-// import { inject } from 'vue';
-// const posts = inject('posts');
 
 const props = defineProps({
+  slug: {
+    type: String,
+    required: true,
+  },
   tag: {
     type: String,
     required: true,
@@ -29,7 +31,7 @@ const props = defineProps({
 
 <template>
   <li class="my-2 px-2 w-full overflow-hidden md:w-1/3 lg:w-1/3 xl:w-1/3">
-    <a href="">
+    <router-link :to="'/blog/' + props.slug">
       <div
         class="mx-2 flex items-center justify-center bg-gray-300 bg-cover bg-center relative rounded overflow-hidden"
         :style="{ 'background-image': 'url(images/' + props.img + ')' }"
@@ -45,6 +47,6 @@ const props = defineProps({
           <span class="block text-xs text-white font-sans">{{ props.date }}</span>
         </div>
       </div>
-    </a>
+    </router-link>
   </li>
 </template>
