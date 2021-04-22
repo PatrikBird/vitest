@@ -1,6 +1,6 @@
 import { BlogPost } from './types';
 
-export const posts = new Array<BlogPost>(
+export const blogPosts = new Array<BlogPost>(
   {
     slug: 'save-oceans',
     tag: 'Environmentalism',
