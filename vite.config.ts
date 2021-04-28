@@ -68,6 +68,7 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
+      registerType: 'autoUpdate',
       manifest: {
         name: 'Vitest',
         short_name: 'Vitest',
